@@ -5,6 +5,9 @@ const app = express();
 
 const bodyParser = require('body-parser');
 
+const cryptoroutes = require('./routes/crypto');
+const currencyroutes = require('./routes/currency');
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('./public'))
 
@@ -20,21 +23,8 @@ app.get('/', (req,res) =>{
     });
 })
 
-app.get('/currency', (req,res) =>{
-    res.render('currency', {
-        title:"Currency",
-        name:"currency",
-        quote:`Don’t tell me where your priorities are. 
-Show me where you spend your money and I’ll tell you what they are`
-    });
-})
+app.use('/currency', currencyroutes)
 
-app.get('/crypto', (req,res) =>{
-    res.render('crypto', {
-        title: "Crypto",
-        name: "crypto",
-        quote:"The purpose of a centralized financial system or any other system, is not to exploit people, but to ensure stability in the society"
-    });
-})
+app.use('/crypto',cryptoroutes);
 
 app.listen('9000');
