@@ -1,0 +1,40 @@
+<div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <div
+        class="ui stackable inverted divided equal height stackable grid">
+     
+
+
+  </div>
+  <div class="seven wide column">
+    <h4 class="ui inverted header"><%=quote%></h4>
+    <p>
+      Thanks for visiting
+    </p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+<script>
+$(document).ready(function() {
+// fix menu when passed
+$(".masthead").visibility({
+once: false,
+onBottomPassed: function() {
+  $(".fixed.menu").transition("fade in");
+},
+onBottomPassedReverse: function() {
+  $(".fixed.menu").transition("fade out");
+}
+});
+
+// create sidebar and attach to menu open
+$(".ui.sidebar").sidebar("attach events", ".toc.item");
+});
+</script>
+</body>
+</html>
+

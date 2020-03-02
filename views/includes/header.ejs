@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no"
+    />
+    <title><%= title %></title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    type="text/css" />
+ 
+    <link rel="stylesheet" href="/css/general.css">
+ </head>
+
+  <body id="root">
+    <div class="ui large top fixed hidden menu">
+      <div class="ui container">
+        <% if( name == "home")
+        {%>
+        <a href="/" class="active item">Home</a> <a href="/currency" class="item">Currency</a>
+        <a href="/crypto" class="item">Crypto</a>
+        <% }  
+       else if( name == "currency")
+        {%>
+        <a href="/" class="item">Home</a> <a href="/currency" class="active item">Currency</a>
+        <a href="/crypto" class="item">Crypto</a>
+        <% } else
+        {%>
+        <a href="/" class="item">Home</a> <a href="/currency" class="item">Currency</a>
+        <a href="/crypto" class="active item">Crypto</a>
+        <% } %> 
+      </div>
+    </div>
+    <!--Sidebar Menu-->
+    <div class="ui vertical inverted sidebar menu">
+      <% if( name == "home")
+              {%>
+              <a href="/" class="active item">Home</a> <a href="/currency" class="item">Currency</a>
+              <a href="/crypto" class="item">Crypto</a>
+              <% }  
+             else if( name == "currency")
+              {%>
+              <a href="/" class="item">Home</a> <a href="/currency" class="active item">Currency</a>
+              <a href="/crypto" class="item">Crypto</a>
+              <% } else
+              {%>
+              <a href="/" class="item">Home</a> <a href="/currency" class="item">Currency</a>
+              <a href="/crypto" class="active item">Crypto</a>
+              <% } %> 
+    </div>
+
+    <div class="pusher">
+        <div class="ui inverted vertical masthead center aligned segment">
+          <div class="ui container">
+            <div class="ui large secondary inverted pointing menu">
+              <a class="toc item"><i class="sidebar icon"></i></a>
+              <% if( name == "home")
+              {%>
+              <a href="/" class="active item">Home</a> <a href="/currency" class="item">Currency</a>
+              <a href="/crypto" class="item">Crypto</a>
+              <% }  
+             else if( name == "currency")
+              {%>
+              <a href="/" class="item">Home</a> <a href="/currency" class="active item">Currency</a>
+              <a href="/crypto" class="item">Crypto</a>
+              <% } else
+              {%>
+              <a href="/" class="item">Home</a> <a href="/currency" class="item">Currency</a>
+              <a href="/crypto" class="active item">Crypto</a>
+              <% } %> 
+              
+            </div>
+          </div>
