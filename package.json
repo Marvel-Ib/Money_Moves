@@ -1,0 +1,19 @@
+{
+  "name": "money_moves",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marvel-Ib/Money_Moves.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marvel-Ib/Money_Moves/issues"
+  },
+  "homepage": "https://github.com/Marvel-Ib/Money_Moves#readme"
+}
