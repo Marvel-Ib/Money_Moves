@@ -12,14 +12,14 @@
         <div class="ui label" >
           <i class="money bill alternate icon"></i>Enter Amount to Convert 
         </div>
-        <input type="text" name="empty" placeholder="Amount">
+        <input type="text" name="empty" placeholder="Amount" id="d">
       </div>
       
      <div class="field">
         <div class="ui form" >
           <div class="field" name="ss">
             <div class="ui label" >Base Currency</div>
-            <select class="ui search dropdown" name="dropdown">
+            <select class="ui search dropdown" name="dropdown" id="dd">
               <option value="">Select Currency</option>
               <option value="ARS">Argentine Peso</option>
               <option value="AUD">Åustralian Dollar</option>
@@ -59,7 +59,7 @@
   <div class="ui form">
     <div class="field" name="sss">
       <div class="ui label" >Quote Currency</div>
-      <select class="ui search dropdown" name="dropdown">
+      <select class="ui search dropdown" name="dropdown" id="ddd">
         <option value="">Select Currency</option>
         <option value="ARS">Argentine Peso</option>
         <option value="AUD">Åustralian Dollar</option>
@@ -94,8 +94,12 @@
     </div>
   </div>
       <br>
-              <button class="ui button" type="submit">Submit</button>
+              <button class="ui button" type="submit">Convert</button>
     </form>
+
+    <h4 class="ui header" id="lbl1"></h4>
+    <h2 class="ui header" id="lbl2"></h2>
+    <h4 class="ui header" id="lbl3"></h4>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
