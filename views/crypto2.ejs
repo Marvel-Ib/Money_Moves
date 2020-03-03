@@ -2,43 +2,100 @@
 <!--Page Contents-->
 
       <div class="ui text container">
-        <h1 class="ui inverted header">Imagine-a-Company</h1>
+        <h1 class="ui inverted header">Crypto Conversion</h1>
         <h2>An asset to your business and money moves</h2>
+        <br>
+        <p>Scroll down to convert</p>
       </div>
     </div>
 
-
-
-    <div class="ui vertical stripe segment">
-        <div class="ui middle aligned stackable grid container">
-          <div class="row">
-            <div class="eight wide column">
-              <h3 class="ui header">We Help Companies and Companions</h3>
-              <p>
-                We can give your company superpowers to do things that they
-                never thought possible. Let us delight your customers and
-                empower your needs...through pure data analytics.
-              </p>
-              <h3 class="ui header">We Make Bananas That Can Dance</h3>
-              <p>
-                Yes that's right, you thought it was the stuff of dreams, but
-                even bananas can be bioengineered.
-              </p>
-            </div>
-            <div class="six wide right floated column">
-              <img
-                class="ui large bordered rounded image"
-                src="./static/images/wireframe/white-image.png"
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="center aligned column">
-              <a class="ui huge button">Check Them Out</a>
-            </div>
+ <form class="ui form">
+      <div class="field">
+        <div class="ui label" >
+          <i class="money bill alternate icon"></i>Enter Amount to Convert 
+        </div>
+        <input type="text" name="empty" placeholder="Amount" id="d">
+      </div>
+      
+     <div class="field">
+        <div class="ui form" >
+          <div class="field" name="ss">
+            <div class="ui label" >Base</div>
+            <select class="ui search dropdown" name="dropdown" id="dd">
+            <option value="">Fiat-Currency</option>
+              <option value="NGN">Nigerian Naira</option>
+              <option value="USD">United State Dollar</option>
+              <option></option>
+              <option></option>
+             <option value="">Precious-Metals</span> </option>
+              <option value="XAU">Gold</option>
+              <option value="XAG">Silver</option>
+              <option value="XPT">Platinum</option>
+              <option value="XPD">Palladium</option>
+              <option></option>
+              <option></option>
+              <option value="">Crytpo-Currencies</span> </option>
+              <option value="BTC">Bitcoin</option>
+              <option value="ETH">Ethereum</option>
+              <option value="XRP">XRP</option>
+              <option value="BCH">Bitcoin Cash</option>
+              <option value="USDT">Tether</option>
+              <option value="LTC">Litecoin</option>
+              <option value="EOS">EOS</option>
+              <option value="XMR">Monero</option>
+              <option value="TRX">Tron</option>
+              <option value="HT">Huobi Token</option>
+             
+          
+            </select>
           </div>
         </div>
-      </div>
-    
 
+<br>
+      
+<div class="field">
+  <div class="ui form" >
+    <div class="field" name="ss">
+      <div class="ui label" >Quote</div>
+      <select class="ui search dropdown" name="dropdown" id="ddd">
+      <option value="">Fiat-Currency</option>
+        <option value="NGN">Nigerian Naira</option>
+        <option value="USD">United State Dollar</option>
+        <option></option>
+        <option></option>
+       <option value="">Precious-Metals</span> </option>
+        <option value="XAU">Gold</option>
+        <option value="XAG">Silver</option>
+        <option value="XPT">Platinum</option>
+        <option value="XPD">Palladium</option>
+        <option></option>
+        <option></option>
+        <option value="">Crytpo-Currencies</span> </option>
+        <option value="BTC">Bitcoin</option>
+        <option value="ETH">Ethereum</option>
+        <option value="XRP">XRP</option>
+        <option value="BCH">Bitcoin Cash</option>
+        <option value="USDT">Tether</option>
+        <option value="LTC">Litecoin</option>
+        <option value="EOS">EOS</option>
+        <option value="XMR">Monero</option>
+        <option value="TRX">Tron</option>
+        <option value="HT">Huobi Token</option>
+       
+    
+      </select>
+    </div>
+  </div>
+<br>
+              <button class="ui button" type="submit">Convert</button>
+    </form>
+
+    <h4 class="ui header" id="lbl1"></h4>
+    <h2 class="ui header" id="lbl2"></h2>
+    <h4 class="ui header" id="lbl3"></h4>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+      <script src="/js/frontcrypto.js"></script>
 <%- include('includes/footer.ejs') %>
