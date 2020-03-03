@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 
 const bodyParser = require('body-parser');
+const PORT = process.env.PORT || 9000;
 
 const cryptoroutes = require('./routes/crypto');
 const currencyroutes = require('./routes/currency');
@@ -24,4 +25,4 @@ app.use('/crypto',cryptoroutes);
 
 app.use(homecontroller.errorstuff)
 
-app.listen('9000');
+app.listen(PORT);

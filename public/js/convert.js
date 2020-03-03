@@ -35,7 +35,7 @@ getform.addEventListener('submit', (e) =>
     const amountval = document.getElementById('d').value;
     const dpval = document.getElementById('dd').value;
     const dpval2 = document.getElementById('ddd').value;
-    const url = `http://localhost:9000/currency/convert?base=${dpval}&symbol=${dpval2}&amount=${amountval}`
+    const url = `/currency/convert?base=${dpval}&symbol=${dpval2}&amount=${amountval}`
 fetch(url)
 .then(res => res.json())
 .then((data) =>

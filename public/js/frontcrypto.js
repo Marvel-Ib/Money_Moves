@@ -33,7 +33,7 @@ getform.addEventListener('submit', (e) =>
     const dpval = document.getElementById('dd').value;
     const dpval2 = document.getElementById('ddd').value;
     
-    const url = `http://localhost:9000/crypto/cryptoconvert?symbol=${dpval}&convert=${dpval2}&amount=${amountval}`
+    const url = `/crypto/cryptoconvert?symbol=${dpval}&convert=${dpval2}&amount=${amountval}`
 fetch(url)
 .then(res => res.json())
 .then((data) =>
