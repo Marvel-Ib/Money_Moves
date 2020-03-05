@@ -26,3 +26,5 @@ app.use('/crypto',cryptoroutes);
 app.use(homecontroller.errorstuff)
 
 app.listen(PORT);
+
+//js
