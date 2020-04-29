@@ -3,7 +3,9 @@ Node.js app made with Express and Semantic Ui  that uses  [TraderMade](https://t
 
 
 ## Hosting 
-Node app deployed and ran on Glitch, click the link below to see the live app 
+Node app deployed and ran on Glitch, 
+
+## click the link below to see the live app 
 
 # [marvel-money-moves](https://breezy-cherry-clownfish.glitch.me/)
 
