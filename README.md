@@ -7,7 +7,7 @@ Node app deployed and ran on Glitch,
 
 ## click the link below to see the live app 
 
-# [marvel-money-moves](https://breezy-cherry-clownfish.glitch.me/)
+# [marvel-money-moves](https://marvel-money-moves.herokuapp.com/)
 
 # Usage
 ## Installation
